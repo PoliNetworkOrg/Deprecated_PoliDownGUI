@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -205,6 +206,38 @@ namespace PoliDownGUI
             catch
             {
                 return null;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string s = System.Reflection.Assembly.GetEntryAssembly().Location;
+                s = s.Replace('\\', '/');
+                var s2 = s.Split('/');
+                string s3 = "";
+                for (int i=0; i<s2.Length-1; i++)
+                {
+                    s3 += s2[i] + "/";
+                }
+
+                s3 += "videos";
+
+                try
+                {
+                    Directory.CreateDirectory(s3);
+                }
+                catch
+                {
+                    ;
+                }
+
+                Process.Start(s3);
+            }
+            catch
+            {
+                ;
             }
         }
     }
