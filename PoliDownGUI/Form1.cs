@@ -90,7 +90,7 @@ namespace PoliDownGUI
         private string SetAppdataPath()
         {
             string s = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            s = s + "/PoliDownGUI/";
+            s += "/PoliDownGUI/";
 
             try
             {
@@ -161,7 +161,7 @@ namespace PoliDownGUI
             return (lines).ToList();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             var r = openFileDialog.ShowDialog();
@@ -209,7 +209,7 @@ namespace PoliDownGUI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             try
             {
