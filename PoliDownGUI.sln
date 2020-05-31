@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliDownGUI", "PoliDownGUI\PoliDownGUI.csproj", "{227AF810-361E-406C-ACF9-F5EB0C9EB9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{227AF810-361E-406C-ACF9-F5EB0C9EB9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227AF810-361E-406C-ACF9-F5EB0C9EB9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227AF810-361E-406C-ACF9-F5EB0C9EB9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227AF810-361E-406C-ACF9-F5EB0C9EB9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F75551A2-942F-495D-8341-DC60F901D8BC}
+	EndGlobalSection
+EndGlobal
