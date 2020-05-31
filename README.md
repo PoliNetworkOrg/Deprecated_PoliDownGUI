@@ -1,4 +1,6 @@
-PoliDownGUI
+## PoliDownGUI
+
+![Screenshot](img/Main.png)
 
 Il software è disponibile solo per Windows (7 o superiore)
 
