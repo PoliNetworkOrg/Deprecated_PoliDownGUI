@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PoliDownGUI
@@ -59,7 +53,7 @@ namespace PoliDownGUI
             {
                 textBox_password.Text = password;
             }
-            
+
         }
 
         private int? TryGetInt(string v)
@@ -109,7 +103,7 @@ namespace PoliDownGUI
 
         private void Button_download_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty( textBox_codice_persona.Text))
+            if (string.IsNullOrEmpty(textBox_codice_persona.Text))
             {
                 MessageBox.Show("Devi inserire un codice persona!");
                 return;
@@ -121,7 +115,7 @@ namespace PoliDownGUI
                 return;
             }
 
-            codice_persona = TryGetInt( textBox_codice_persona.Text);
+            codice_persona = TryGetInt(textBox_codice_persona.Text);
 
             if (codice_persona == null)
             {
@@ -151,9 +145,9 @@ namespace PoliDownGUI
                 return;
             }
 
-            string strCmdText = "/K node "; 
-               
-            strCmdText+= polidown_js_path +" -u ";
+            string strCmdText = "/K node ";
+
+            strCmdText += polidown_js_path + " -u ";
             strCmdText += codice_persona.Value.ToString();
             strCmdText += " ";
             strCmdText += "-p";
@@ -184,7 +178,7 @@ namespace PoliDownGUI
         private List<string> GetList(string[] lines)
         {
             List<string> r = new List<string>();
-            foreach(var item in lines)
+            foreach (var item in lines)
             {
                 if (!string.IsNullOrEmpty(item))
                     r.Add(item);
@@ -250,7 +244,7 @@ namespace PoliDownGUI
                 s = s.Replace('\\', '/');
                 var s2 = s.Split('/');
                 string s3 = "";
-                for (int i=0; i<s2.Length-1; i++)
+                for (int i = 0; i < s2.Length - 1; i++)
                 {
                     s3 += s2[i] + "/";
                 }
