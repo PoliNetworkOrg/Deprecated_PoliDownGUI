@@ -145,6 +145,12 @@ namespace PoliDownGUI
 
             videos = GetList(textBox_link.Lines);
 
+            if (videos == null || videos.Count == 0)
+            {
+                MessageBox.Show("Devi scegliere dei video validi da scaricare!");
+                return;
+            }
+
             string strCmdText = "/K node "; 
                
             strCmdText+= polidown_js_path +" -u ";
@@ -177,7 +183,14 @@ namespace PoliDownGUI
 
         private List<string> GetList(string[] lines)
         {
-            return (lines).ToList();
+            List<string> r = new List<string>();
+            foreach(var item in lines)
+            {
+                if (!string.IsNullOrEmpty(item))
+                    r.Add(item);
+            }
+
+            return r;
         }
 
         private void Button2_Click(object sender, EventArgs e)
