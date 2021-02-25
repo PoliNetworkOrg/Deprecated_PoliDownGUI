@@ -1,3 +1,12 @@
+# 👇 Warning 👇
+
+Questo progetto è **deprecato**.
+
+Visitate quello nuovo qui:
+https://polinetwork.github.io/it/projects/polidl/index.html
+
+# 👆 Warning 👆
+
 ## PoliDownGUI
 
 ![Screenshot](img/Main.png)
