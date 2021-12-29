@@ -3,7 +3,8 @@
 Questo progetto è **deprecato**.
 
 Visitate quello nuovo qui:
-https://polinetwork.github.io/it/projects/polidl/index.html
+* https://polinetwork.github.io/it/projects/polidl/index.html
+* https://github.com/yuyu-19/PoliDL-GUI
 
 # 👆 Warning 👆
 
